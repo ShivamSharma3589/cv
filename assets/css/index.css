@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+h4.title {
+  font-family: "Wittgenstein", serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: gray;
+  border-bottom: 1px solid gray;
+  margin-bottom: 15px;
+}
+
+.hr-divider {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  color: gray;
+  margin: 15px 0;
+}
+.hr-divider svg {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+.hr-divider::before, .hr-divider::after {
+  content: "";
+  display: block;
+  width: calc(50% - 15px);
+  height: 1px;
+  border-top: 1px solid gray;
+  color: gray;
+  position: absolute;
+  top: 50%;
+}
+.hr-divider::before {
+  left: 0;
+}
+.hr-divider::after {
+  right: 0;
+}
+
+.hr {
+  border-top: 1px solid gray;
+  margin: 20px 0;
+}
+
+.cv-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+.cv-wrapper .cv-left-section {
+  background-color: #f1f1f1;
+  padding: 50px 20px;
+}
+.cv-wrapper .cv-left-section .img-area {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.cv-wrapper .cv-left-section .img-area img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.cv-wrapper .cv-left-section .user-name {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Wittgenstein", serif;
+  line-height: 38px;
+}
+.cv-wrapper .cv-left-section .user-name .surname {
+  color: rgb(39, 59, 50);
+}
+.cv-wrapper .cv-left-section .user-designation {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 7900;
+  margin-top: 10px;
+  font-family: "Wittgenstein", serif;
+  max-width: 300px;
+  margin: 0 auto;
+  line-height: 32px;
+}
+.cv-wrapper .cv-left-section .contact-details-list {
+  list-style: none;
+  margin: 30px 0;
+  color: gray;
+}
+.cv-wrapper .cv-left-section .contact-details-list li {
+  padding: 8px 0;
+}
+.cv-wrapper .cv-left-section .contact-details-list li span {
+  display: inline-block;
+  width: 25px;
+}
+.cv-wrapper .cv-left-section .social-links {
+  margin-bottom: 30px;
+}
+.cv-wrapper .cv-left-section .social-links ul {
+  list-style: none;
+}
+.cv-wrapper .cv-left-section .social-links ul li {
+  padding: 5px 0;
+  color: gray;
+}
+.cv-wrapper .cv-left-section .personal-info {
+  margin-bottom: 30px;
+}
+.cv-wrapper .cv-left-section .personal-info ul {
+  padding-left: 16px;
+}
+.cv-wrapper .cv-left-section .personal-info ul li {
+  padding: 5px 0;
+}
+.cv-wrapper .cv-left-section .skill-area ul {
+  list-style: none;
+}
+.cv-wrapper .cv-left-section .skill-area ul li {
+  padding: 8px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.cv-wrapper .cv-left-section .skill-area ul li .skill-name {
+  margin-right: 15px;
+}
+.cv-wrapper .cv-right-section {
+  padding: 30px;
+}
+.cv-wrapper .cv-right-section .about-me {
+  margin-bottom: 30px;
+}
+.cv-wrapper .cv-right-section .exp-area {
+  margin-bottom: 40px;
+}
+.cv-wrapper .cv-right-section .exp-area .hr {
+  margin-left: 20px;
+}
+.cv-wrapper .cv-right-section .exp-area .exp-icon {
+  position: absolute;
+  left: -10px;
+  color: gray;
+  font-size: 20px;
+}
+.cv-wrapper .cv-right-section .exp-area .exp-item {
+  position: relative;
+  padding-left: 20px;
+}
+.cv-wrapper .cv-right-section .exp-area .exp-item::before {
+  content: "";
+  height: calc(100% + 5px);
+  border-right: 1px solid gray;
+  position: absolute;
+  left: 0;
+  top: 24px;
+  border-radius: 50%;
+}
+.cv-wrapper .cv-right-section .exp-area .exp-item .exp-duration {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.cv-wrapper .cv-right-section .exp-area .exp-item .exp-title {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 5px;
+  font-family: "Wittgenstein", serif;
+}
+.cv-wrapper .cv-right-section .exp-area .exp-item .exp-company {
+  margin-bottom: 8px;
+}/*# sourceMappingURL=index.css.map */
